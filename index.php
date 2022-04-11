@@ -63,15 +63,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
 </head>
-<body>
-    <?php 
-    foreach ($questions as $key) {
-        ?> <div>
-            <h2> <?php echo $key['request'] ?> </h2>
-            <p><?php echo $key['reply'] ?></p>
+<body style="padding: 0; margin:0;" >
+    <div style="border-bottom: 1px solid black; position:fixed; width:100%;background-color:white;">
+       <span> mark-google privacy e termini</span>  <div style="display:inline-block;position:absolute;top:0;right:0; " > icona e menu </div>
+        <div>
+            <ul style="list-style: none;padding:0;" >
+                <li style="border-bottom: 1px solid trasparent;display:inline-block; " >1</li>
+                <li style="border-bottom: 1px solid trasparent;display:inline-block; " >2</li>
+                <li style="border-bottom: 1px solid trasparent;display:inline-block; " >3</li>
+                <li style="border-bottom: 1px solid trasparent;display:inline-block; " >4</li>
+                <li style="border-bottom: 1px solid trasparent;display:inline-block; " >5</li>
+            </ul>
+        </div>
+    </div>
+    <div style="width:60%;margin-left:20%;">
+        <?php 
+        foreach ($questions as $key) {
+            ?> <div>
+                <h2> <?php echo $key['request'] ?> </h2>
+                <p><?php echo $key['reply'] ?></p>
 
-        </div>  <?php
-    }
-    ?>
+            </div>  <?php
+        }
+        ?>
+    </div>
 </body>
 </html>
