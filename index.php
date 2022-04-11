@@ -61,7 +61,11 @@
 <body>
     <?php 
     foreach ($questions as $key) {
-        
+        ?> <div>
+            <h2> <?php echo $key['request'] ?> </h2>
+            <p><?php echo $key['reply'] ?></p>
+
+        </div>  <?php
     }
     ?>
 </body>
